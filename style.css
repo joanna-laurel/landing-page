@@ -26,7 +26,8 @@ body {
     color: #f9faf8;
 }
 
-.header-text {
+.header-text,
+.footer {
     color: #e5e7eb;
     font-size: 18px;
 }
@@ -123,15 +124,64 @@ img.header-photo {
 }
 
 .quote {
-    height: 250px;
+    min-height: 350px;
     background-color: #efe7eb;
+    padding: 70px 250px 20px 250px;
+}
+
+.quote-text {
+    font-size: 36px;
+    color: #1f2937;
+    font-style: italic;
+    font-weight: 300;
+}
+
+.quote-author {
+    font-size: 22px;
+    font-weight: 900;
+    text-align: right;
 }
 
 .sign-up {
     height: 175px;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 150px;
+}
+
+.sign-up-box {
+    background-color: #3882f6;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 7px;
+    padding: 20px 80px;
+}
+
+.call-to-action {
+    color: #f9faf8;
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: -15px;
+}
+
+button.sign-up-border {
+    background-color: #3882f6;
+    color: #f9faf8;
+    font-size: 18px;
+    font-weight: 900;
+    height: 40px;
+    width: 130px;
+    border-radius: 7px;
+    border: solid #f9faf8;
+    flex: 0 0 100%;
+
 }
 
 .footer {
     height: 75px;
     background-color: #1f2937;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
