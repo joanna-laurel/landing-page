@@ -6,27 +6,31 @@ body {
 }
 
 .header {
-    height: 550px;
+    min-height: 550px;
     background-color: #1f2937;
     display: flex;
     flex-direction: column;
+   
 }
 
 .header-top {
-    height: 60px;
+    min-height: 60px;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    padding: 0px 150px 0px 150px;
+    padding: 0px 150px;
 }
 
 .header-logo {
     font-size: 24px;
     font-weight: 700;
     color: #f9faf8;
+    margin-right: 100px;
 }
 
 .header-text,
+.sign-up-text,
 .footer {
     color: #e5e7eb;
     font-size: 18px;
@@ -37,7 +41,8 @@ ul.header-text {
     display: flex;
     gap: 25px;
     margin: 0;
-    padding: 0;   
+    padding: 0; 
+    text-wrap: nowrap;  
 }
 
 .header-bottom {
@@ -46,23 +51,23 @@ ul.header-text {
     justify-content: space-between;
     align-items: center;
     padding: 0px 150px 50px 150px;
-    gap: 40px;
-    border: solid;
 }
 
 .header-left {
-    border: solid;
-    max-width: 470px;
+    flex: 0 1 400px;
+    margin-right: 70px;
+    min-width: 300px;
 }
+
 
 h1 {
     font-size: 48px;
     font-weight: 900;
     color: #f9faf8;
-    margin: -10px 0px -10px 0px;
+    margin: -10px 0px;
 }
 
-button.sign-up {
+button.sign-up-button {
     background-color: #3882f6;
     color: #f9faf8;
     font-size: 18px;
@@ -74,14 +79,10 @@ button.sign-up {
 }
 
 .header-right {
-    border: solid;
-    flex: 
-
-}
-
-img.header-photo {
-    max-height: 300px;
-    max-width: 600px;
+    flex: 0 4 100%;
+    height: 200px;
+    max-width: 400px;
+    min-width: 100px;
 }
 
 .info {
@@ -124,9 +125,12 @@ img.header-photo {
 }
 
 .quote {
-    min-height: 350px;
     background-color: #efe7eb;
-    padding: 70px 250px 20px 250px;
+    padding: 40px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .quote-text {
@@ -134,16 +138,20 @@ img.header-photo {
     color: #1f2937;
     font-style: italic;
     font-weight: 300;
+    max-width: 700px;
 }
 
 .quote-author {
     font-size: 22px;
     font-weight: 900;
     text-align: right;
+    text-wrap: nowrap;
+    margin-top: -10px;
+    margin-left: 300px;
 }
 
 .sign-up {
-    height: 175px;
+    min-height: 175px;
     justify-content: center;
     align-items: center;
     padding: 50px 150px;
@@ -153,9 +161,11 @@ img.header-photo {
     background-color: #3882f6;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     align-items: center;
     border-radius: 7px;
-    padding: 20px 80px;
+    padding: 25px 0px 40px 80px;
+    min-width: 300px
 }
 
 .call-to-action {
@@ -163,6 +173,12 @@ img.header-photo {
     font-size: 20px;
     font-weight: 700;
     margin-bottom: -15px;
+
+}
+
+.sign-up-text {
+    text-wrap: wrap;
+    margin-right: 80px;
 }
 
 button.sign-up-border {
@@ -174,8 +190,8 @@ button.sign-up-border {
     width: 130px;
     border-radius: 7px;
     border: solid #f9faf8;
-    flex: 0 0 100%;
-
+    flex-shrink: 0;
+    margin-right: 80px;
 }
 
 .footer {
