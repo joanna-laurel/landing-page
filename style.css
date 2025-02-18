@@ -15,6 +15,7 @@ body {
 .header-container {
     margin: 10px 80px 50px 80px;
     max-width: 1000px;
+    padding-left: 100px;
     flex: 1 
 }
 
@@ -23,6 +24,7 @@ body {
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
+    max-width: 1000px;
 }
 
 .header-logo {
@@ -30,6 +32,7 @@ body {
     font-weight: 700;
     color: #f9faf8;
     margin-right: 200px;
+    text-wrap: nowrap;
 }
 
 .header-text,
@@ -46,7 +49,7 @@ body {
     gap: 25px;
     margin: 0;
     padding: 0; 
-    
+    margin-right: 100px;
 }
 
 li {
@@ -56,16 +59,16 @@ li {
 
 .header-bottom {
     display: flex;
-    justify-content: space-between;
     align-items: center;
-
-    margin: 100px 0px 50px 0px;
+    flex-wrap: wrap;
+    max-width: 1000px;
+    margin: 100px 0px 0px 0px;
 }
 
 .header-left {
-    margin-right: 70px;
-    flex: 0 3 400px;
-    min-width: 200px;
+    margin-right: 100px;
+    flex-wrap: wrap;
+    flex: 1 1 400px;
 }
 
 
@@ -94,9 +97,8 @@ button {
 .header-right {
     max-height: 250px;
     max-width: 350px;
-    min-width: 0px;
-    margin: 50px 0px;
-    flex: 0 5 100%;
+    margin: 50px 100px 50px 0px;
+    flex: 0 1 100%;
 }
 
 .info {
@@ -178,7 +180,6 @@ button {
     margin: 50px 80px;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: ;
     border-radius: 7px;
     padding: 40px 0px 40px 80px;
     max-width: 850px;
