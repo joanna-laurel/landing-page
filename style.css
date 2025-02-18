@@ -100,8 +100,9 @@ button {
 }
 
 .info {
-    height: 450px;
-    padding-top: 25px;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
 }
 
 .info-statement {
@@ -166,7 +167,6 @@ button {
 }
 
 .sign-up {
-    min-height: 175px;
     display: flex;
     justify-content: center;
     align-items: center;
