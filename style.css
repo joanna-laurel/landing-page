@@ -209,7 +209,6 @@ button.fake-button {
     border-radius: 7px;
     padding: 40px 0px 40px 80px;
     max-width: 850px;
-    min-width: 400px;
 }
 
 .action-left {
@@ -235,9 +234,9 @@ button.action-button {
 /*footer*/
 
 .footer {
-    height: 75px;
     background-color: #1f2937;
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 10px;
 }
