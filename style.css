@@ -3,7 +3,46 @@ body {
     display: flex;
     flex-direction: column;
     box-sizing: border-box;
+    margin: 0;
 }
+
+/*elements*/
+
+button {
+    background-color: #3882f6;
+    color: #f9faf8;
+    font-size: 18px;
+    font-weight: 900;
+    border-radius: 7px;
+    flex-shrink: 0;
+}
+
+button:hover {
+    background-color: #455e81;
+}
+
+p, a {
+    color: #e5e7eb;
+    font-size: 18px;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    color: #3882f6;
+}
+
+
+h1 {
+    font-size: 48px;
+    font-weight: 900;
+    color: #f9faf8;
+    margin: -10px 0px;
+}
+
+/*header section*/
 
 .header {
     background-color: #1f2937;
@@ -12,14 +51,18 @@ body {
     justify-content: center;
 }
 
-.header-container {
+.header-container {  /*as in the quote
+    section, this container was not 
+    entirely necessary, but I like the
+    way it constrains the maximum width of
+    the header contents*/
     margin: 10px 80px 50px 80px;
     max-width: 1000px;
     padding-left: 100px;
     flex: 1 
 }
 
-.header-top {
+.header-top {  /*contains logo and links*/
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -35,14 +78,7 @@ body {
     text-wrap: nowrap;
 }
 
-.header-text,
-.sign-up-text,
-.footer {
-    color: #e5e7eb;
-    font-size: 18px;
-}
-
-.header-text {
+.header-links {
     list-style: none;
     display: flex;
     flex-wrap: wrap;
@@ -52,12 +88,7 @@ body {
     margin-right: 100px;
 }
 
-li {
-    flex-wrap: wrap;
-    
-}
-
-.header-bottom {
+.header-bottom {  
     display: flex;
     align-items: center;
     flex-wrap: wrap;
@@ -65,46 +96,31 @@ li {
     margin: 100px 0px 0px 0px;
 }
 
-.header-left {
+.header-bottom-left {
     margin-right: 100px;
     flex-wrap: wrap;
     flex: 1 1 400px;
 }
 
-
-h1 {
-    font-size: 48px;
-    font-weight: 900;
-    color: #f9faf8;
-    margin: -10px 0px;
-}
-
-button.sign-up-button {
+button.fake-button {
     height: 40px;
     width: 150px;
     border: none;
 }
 
-button {
-    background-color: #3882f6;
-    color: #f9faf8;
-    font-size: 18px;
-    font-weight: 900;
-    border-radius: 7px;
-    flex-shrink: 0;
-}
-
-.header-right {
+.header-bottom-right {
     max-height: 250px;
     max-width: 350px;
     margin: 50px 100px 50px 0px;
     flex: 0 1 100%;
 }
 
+/*info section*/
+
 .info {
-    padding: 25px;
     display: flex;
     flex-direction: column;
+    padding: 25px;
 }
 
 .info-statement {
@@ -114,14 +130,16 @@ button {
     text-align: center;
 }
 
-.info-images {
+.info-container {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     gap: 40px;
 }
 
-.info-photo-text {
+.info-photo-text { /*I am a mini
+    container holding together each photo and
+    its caption*/
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -142,40 +160,47 @@ button {
     text-wrap: wrap;
 }
 
+/*quote section*/
+
 .quote {
     background-color: #efe7eb;
-    padding: 70px 0px;
     display: flex;
     justify-content: center;
 }
 
-.quote-container {
+.quote-container { /*this wasn't strictly 
+    necessary but it constrained the growth 
+    of the quote horizontally versus just 
+    padding the quote section*/
     max-width: 700px;
-    margin: 0px 80px 15px;
+    margin: 20px 80px 60px 80px;
 }
 
 .quote-text {
     font-size: 36px;
     color: #1f2937;
     font-style: italic;
-    font-weight: 300;
+    font-weight: 300; 
 }
 
 .quote-author {
     font-size: 22px;
     font-weight: 900;
+    color: #1f2937;
     text-align: right;
     margin: -10px 50px 0px 0px;
     text-wrap: nowrap;
 }
 
-.sign-up {
+/*action section*/
+
+.action {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.sign-up-box {
+.action-container {
     background-color: #3882f6;
     display: flex;
     margin: 50px 80px;
@@ -187,7 +212,7 @@ button {
     min-width: 400px;
 }
 
-.action-box {
+.action-left {
     margin-right: 80px;
     flex: 2 1 400px;
     flex-wrap: wrap;
@@ -198,21 +223,16 @@ button {
     font-size: 20px;
     font-weight: 700;
     margin: 0px 0px -10px 0px;
-
 }
 
-.sign-up-text {
-
-}
-
-button.sign-up-border {
+button.action-button {
     height: 70px;
     width: 170px;
     border: solid #f9faf8;
     margin-right: 80px;
 }
 
-
+/*footer*/
 
 .footer {
     height: 75px;
