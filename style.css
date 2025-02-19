@@ -203,18 +203,20 @@ button.fake-button {
 .action-container {
     background-color: #3882f6;
     display: flex;
-    margin: 50px 80px;
+    margin: 50px 7%;
     flex-wrap: wrap;
     align-items: center;
+    gap: 40px;
     border-radius: 7px;
-    padding: 40px 0px 40px 80px;
-    max-width: 850px;
+    padding: 40px 7% 80px 7%;
+    max-width: 700px;
 }
 
 .action-left {
-    margin-right: 80px;
     flex: 2 1 400px;
     flex-wrap: wrap;
+    max-width: 550px;
+    margin-bottom: -40px;
 }
 
 .call-to-action {
@@ -224,11 +226,20 @@ button.fake-button {
     margin: 0px 0px -10px 0px;
 }
 
+.action a {
+    font-weight: 500;
+    color: #2f4768;
+}   
+
+.action a:hover {
+    color:  #455e81;
+}
+
 button.action-button {
-    height: 70px;
-    width: 170px;
     border: solid #f9faf8;
-    margin-right: 80px;
+    padding: .8em 1em;
+    flex: 1 1 100px;
+    margin-bottom: -40px;
 }
 
 /*footer*/
