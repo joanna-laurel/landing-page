@@ -56,17 +56,16 @@ h1 {
     entirely necessary, but I like the
     way it constrains the maximum width of
     the header contents*/
-    margin: 10px 80px 50px 80px;
-    max-width: 1000px;
-    padding-left: 100px;
-    flex: 1 
+    margin: 10px 7% 50px 7%;
+    max-width: 1000px; 
 }
 
 .header-top {  /*contains logo and links*/
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
     align-items: center;
+    justify-content: space-between;
+    gap: 20px;
     max-width: 1000px;
 }
 
@@ -74,32 +73,38 @@ h1 {
     font-size: 24px;
     font-weight: 700;
     color: #f9faf8;
-    margin-right: 200px;
     text-wrap: nowrap;
+    flex: 1 1 270px;
+
 }
 
 .header-links {
     list-style: none;
     display: flex;
-    flex-wrap: wrap;
-    gap: 25px;
+    gap: 2em;
     margin: 0;
     padding: 0; 
-    margin-right: 100px;
+}
+
+li {
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
 }
 
 .header-bottom {  
     display: flex;
     align-items: center;
+    justify-content: space-between;
+    gap: 100px;
     flex-wrap: wrap;
     max-width: 1000px;
-    margin: 100px 0px 0px 0px;
+    margin: 100px 0px;
 }
 
 .header-bottom-left {
-    margin-right: 100px;
-    flex-wrap: wrap;
-    flex: 1 1 400px;
+    flex: 1 4 400px;
+    margin-bottom: -70px;
 }
 
 button.fake-button {
@@ -110,9 +115,9 @@ button.fake-button {
 
 .header-bottom-right {
     max-height: 250px;
-    max-width: 350px;
-    margin: 50px 100px 50px 0px;
-    flex: 0 1 100%;
+    max-width: 333px;
+    flex: 1 5 100%;
+    margin-bottom: -70px;
 }
 
 /*info section*/
@@ -173,7 +178,7 @@ button.fake-button {
     necessary but it constrained the growth 
     of the quote horizontally versus just 
     padding the quote section*/
-    max-width: 700px;
+    max-width: 600px;
 }
 
 .quote-text {
